@@ -1,8 +1,15 @@
 import React from 'react';
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Oferta - Monterrico",
+  description: "Departamento en Alquiler - gran oferta en Monterrico"
+};
 
 export default function Home() {
   return (
+    <div>
     <main className="flex min-h-screen flex-col items-center justify-normal space-y-10 p-24">
      <h1 className="text-5xl">
         Departamento de estreno en Monterrico
@@ -60,5 +67,6 @@ export default function Home() {
       />
     </div>
   </main>
+  </div>
   );
 }
